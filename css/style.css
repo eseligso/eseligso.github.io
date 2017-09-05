@@ -50,15 +50,15 @@ a {
 }
 
 .blue-bg {
-  background-color: rgb(71,175,168);
+  background-color: rgb(100, 146, 163);
+}
+
+.orange-bg {
+  background-color: rgb(254, 202, 163);
 }
 
 .pink-bg {
-  background-color: rgb(224,88,137);
-}
-
-.green-bg {
-  background-color: rgb(82,145,75);
+  background-color: rgb(228, 189, 191);
 }
 
 .green {
@@ -90,7 +90,7 @@ a:focus {
 }
 .navbar-custom .navbar-toggle {
   color: rgb(71,175,168);
-  background-color: rgba(224, 88, 137, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   font-size: 12px;
 }
 .navbar-custom .navbar-toggle:focus,
@@ -107,7 +107,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom a {
-  color: rgb(71,175,168);
+  color: rgb(74, 97, 131);
 }
 .navbar-custom .nav li a {
   -webkit-transition: background 0.3s ease-in-out;
@@ -128,14 +128,44 @@ a:focus {
   outline: none;
 }
 .navbar-custom .nav li.active a {
-  background-color: rgba(224, 88, 137, 1);
+  background-color: grey;
+  color: white;
 }
 .navbar-custom .nav li.active a:hover {
   color: white;
 }
 
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: transparent;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: white;
+    border-bottom: 1px solid rgb(224, 88, 137);
+  }
+  .navbar-custom.top-nav-collapse .nav li a:hover {
+    color: white;
+    outline: none;
+    background-color: grey;
+  }
+  .navbar-custom.top-nav-collapse a {
+    color: black;
+  }
+  .navbar-custom.top-nav-collapse .navbar-brand {
+    color: white;
+    cursor: pointer;
+  }
+}
+
 header {
-  background: url(../img/cactus-bg.jpg) no-repeat bottom center scroll;
+  background: url(../img/sc-coast.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -159,11 +189,24 @@ header {
 }
 .intro .intro-body .brand-heading {
   font-size: 40px;
-  color: rgb(82,145,75);
+  color: rgb(255,255,255);
 }
 .intro .intro-body .intro-text {
   font-size: 18px;
   color: rgb(224,88,137);
+}
+
+@media (min-width: 768px) {
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+  .intro .intro-body .brand-heading {
+    font-size: 100px;
+  }
+  .intro .intro-body .intro-text {
+    font-size: 26px;
+  }
 }
 
 .btn-circle {
@@ -171,10 +214,10 @@ header {
   height: 70px;
   margin-top: 15px;
   padding: 7px 16px;
-  border: 2px solid rgb(71,175,168);
+  border: 2px solid white;
   border-radius: 100% !important;
   font-size: 40px;
-  color: rgb(71,175,168);
+  color: white;
   background: transparent;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
@@ -183,7 +226,7 @@ header {
 .btn-circle:hover,
 .btn-circle:focus {
   outline: none;
-  color: rgb(71,175,168);
+  color: white;
   background: rgba(71, 175, 168, 0.1);
 }
 .btn-circle i.animated {
