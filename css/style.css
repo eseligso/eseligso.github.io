@@ -8,7 +8,7 @@ body {
   height: 100%;
   font-family: "Poppins", sans-serif;
   color: white;
-  background-color: black;
+  background-color: white;
 }
 html {
   width: 100%;
@@ -26,6 +26,15 @@ h6 {
   font-weight: 700;
   letter-spacing: 1px;
 }
+
+h3 {
+    margin: 0 0 35px;
+  text-transform: uppercase;
+  font-family: "Bad Script", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 p {
   margin: 0 0 25px;
   font-size: 18px;
@@ -39,7 +48,7 @@ p {
   }
 }
 a {
-  color: #42DCA3;
+  color: rgb(74,97,131);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -83,14 +92,14 @@ a:focus {
 }
 .navbar-custom {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(224,88,137, 0.3);
+  border-bottom: 1px solid rgb(74, 97, 131);
   text-transform: uppercase;
   font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: rgb(224,88,137);
+  background-color: white;
 }
 .navbar-custom .navbar-toggle {
-  color: rgb(71,175,168);
-  background-color: rgba(255, 255, 255, 0.2);
+  color: rgb(74, 97, 131);
+  background-color: rgba(228, 189, 191, 0.4);
   font-size: 12px;
 }
 .navbar-custom .navbar-toggle:focus,
@@ -115,7 +124,7 @@ a:focus {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: rgb(224,88,137);
+  color: rgb(74, 97, 131);
   outline: none;
   background-color: white;
 }
@@ -148,7 +157,7 @@ a:focus {
   .navbar-custom.top-nav-collapse {
     padding: 0;
     background: white;
-    border-bottom: 1px solid rgb(224, 88, 137);
+    border-bottom: 1px solid rgb(74, 97, 131);
   }
   .navbar-custom.top-nav-collapse .nav li a:hover {
     color: white;
@@ -156,7 +165,7 @@ a:focus {
     background-color: grey;
   }
   .navbar-custom.top-nav-collapse a {
-    color: black;
+    color: rgb(74, 97, 131);
   }
   .navbar-custom.top-nav-collapse .navbar-brand {
     color: white;
@@ -166,7 +175,7 @@ a:focus {
 
 header {
   background: url(../img/sc-coast.jpg) no-repeat bottom center scroll;
-  background-color: black;
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -178,7 +187,7 @@ header {
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: black;
+  color: white;
 }
 .intro .intro-body {
   display: block;
@@ -189,11 +198,11 @@ header {
 }
 .intro .intro-body .brand-heading {
   font-size: 40px;
-  color: rgb(255,255,255);
+  color: white;
 }
 .intro .intro-body .intro-text {
   font-size: 18px;
-  color: rgb(224,88,137);
+  color: rgb(74, 97, 131);
 }
 
 @media (min-width: 768px) {
@@ -290,6 +299,7 @@ header {
 
 footer {
   padding: 50px 0;
+  background-color: rgb(74, 97, 131)
 }
 footer p {
   margin: 0;
@@ -317,5 +327,20 @@ footer p {
 }
 
 #about a:hover {
-  color: rgb(224,88,137);
+  color: rgb(74, 97, 131);
+}
+
+.app-img {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 50px;
+
+}
+
+.contact-img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  vertical-align: middle;
 }
